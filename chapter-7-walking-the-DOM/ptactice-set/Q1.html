@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter-7 pratice set</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        display: flex;
+        width: 100%;
+        height: 59px;
+        background: cyan;
+        align-items: center;
+    }
+
+    nav li {
+        list-style: none;
+        padding: 0 23px;
+    }
+</style>
+
+<body>
+
+    <!-- Q-1. create a navber amd change the color of id First element to Red -->
+
+    <nav>
+        <li>Hello</li>
+        <li>about</li>
+        <li>Blog</li>
+        <li>contact</li>
+    </nav>
+
+    <!-- -------javascript--------- -->
+
+    <script>
+        document.getElementsByTagName("nav")[0].firstElementChild.style.color = "red"
+    </script>
+</body>
+
+</html>

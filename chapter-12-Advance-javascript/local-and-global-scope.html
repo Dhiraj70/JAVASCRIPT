@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local and global-scope</title>
+</head>
+
+<body>
+    <h1>local and global-scope</h1>
+
+
+    <script>
+        // block scope
+        
+        // {
+        //     let a = 8;
+        // }
+        // console.log(a)
+
+        // global scope
+        let p = 9;
+
+        // function scope
+        function ax() {
+            let a = 8;
+            console.log(a)
+           // console.log(p)
+        }
+        ax()
+        console.log(p)
+     // console.log(a)
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cahpter-8</title>
+</head>
+
+<body>
+    <div id="first" class="hey" data-game="mario" data-player="dhiraj">
+        hey i am first div container
+    </div>
+    hello world
+
+    <script>
+
+        let first = document.getElementById("first")
+
+        let a = first.getAttribute("class");
+        console.log(a);
+        console.log(first.hasAttribute("class"));
+        console.log(first.hasAttribute("style"));
+        // first.setAttribute("hidden","true");
+        first.setAttribute("class", "true sachin");
+        first.removeAttribute("class")
+        console.log(first.attributes)
+
+      // console.log(first.dataset)
+      // console.log(first.dataset.game)
+      // console.log(first.dataset.player)
+    </script>
+</body>
+
+</html>

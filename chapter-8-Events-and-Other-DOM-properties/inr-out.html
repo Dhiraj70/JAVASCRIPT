@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter-8 inner html</title>
+</head>
+<body>
+    hello 
+    <span id="first" >hey i am span</span>
+   <!-- <span id="first" hidden >hey i am span</span> -->
+
+
+  <!-- ---------JAVASCRIPT------------- -->
+    <script>
+
+        let x = document.getElementsByTagName('span')[0];
+        console.log(x);
+        
+        let y = document.getElementsByTagName('span')[0];
+        console.dir(y);
+
+        console.log(document.body.firstChild.nodeName);
+        console.log(document.body.firstElementChild.nodeName);
+
+        // first.innerHTML;
+        // first.innerHTML = "hey i am dhiraj kumar" ;
+        // first.outerHTML ;
+        // first.outerHTML = "hey i am dhiraj kuamr yadav";
+        // console.log(document.body.firstChild.data);
+        // console.log(document.body.textContent);
+
+        // first.hidden = false;
+
+    </script>
+
+</body>
+</html>

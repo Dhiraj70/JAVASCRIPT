@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Hosting in javascript</title>
+</head>
+
+<body>
+    <h1>Hosting in javascript</h1>
+
+    <script>
+        // Follwing two line will run successfully due to javascript hosting
+        console.log(a)
+
+        greet()
+        function greet() {
+            console.log("good morning")
+        }
+
+        var a = 8;   // Declaration hoisted to the top but initialization is not
+        console.log(a)
+    </script>
+</body>
+
+</html>

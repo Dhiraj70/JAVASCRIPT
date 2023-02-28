@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>Wait 3 seconds (3000 milliseconds) for this page to change.</p>
+
+    <script>
+
+   //  let myPromise = new Promise(function (resolve, reject) {
+   //      let x = prompt("enter the any number");
+   //      alert("hello")
+   //      // resolve(56)
+   //      if (x <= 18) {
+   //          resolve("this is resolve");
+   //      } else {
+   //          reject("this is reject")
+   //      }
+   //  })
+
+   //  console.log(myPromise)
+
+   let myPromise = new Promise(function(resolve, reject) {
+
+    setTimeout(function(){
+        console.log("I love you!!")
+    }, 3000)
+    
+   })
+
+   console.log(myPromise)
+
+    </script>
+</body>
+
+</html>

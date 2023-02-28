@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter-7 pratice set</title>
+</head>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav {
+        display: flex;
+        background: forestgreen;
+        width: 100%;
+        height: 59px;
+        align-items: center;
+    }
+
+    nav li {
+        list-style: none;
+        padding: 0 23px;
+    }
+</style>
+
+<body>
+
+    <!-- Write a javascript code to change background of all "<cyan>" tags to "cyan"-->
+
+    <nav>
+        <li>home</li>
+        <li>about</li>
+        <li>blog</li>
+        <li>contact</li>
+    </nav>
+
+    <script>
+        Array.from(document.getElementsByTagName("li")).forEach(element => {
+            element.style.background = "cyan"
+        })
+    </script>
+</body>
+
+</html>

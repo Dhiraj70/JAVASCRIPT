@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter-8 pratice set</title>
+
+    <style>
+        .bulb {
+            background: red;
+        }
+        .bulbcontainer {
+            width: 341px;
+            height: 341px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Create a glowing bulb effect bulb using classlist toggle method in javascript -->
+
+    <div id="bulb" class="bulbcontainer bulb"></div>
+
+    <script>
+
+        setInterval(async function () {
+            document.querySelector("#bulb").classList.toggle("bulb")
+        }, 300)
+        
+    </script>
+
+</body>
+
+</html>

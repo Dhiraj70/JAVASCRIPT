@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cahpter-8 className classList</title>
+</head>
+
+<style>
+    .yellow {
+        background: yellow;
+        color: #fff;
+    }
+
+    .red {
+        background: red;
+        color: #fff;
+    }
+
+    .text-dark {
+        color: black;
+    }
+</style>
+
+<body>
+
+    <div id="first">
+        <span>Hey I am good</span>
+    </div>
+
+    <!-- ---------javascript--------- -->
+    <script>
+        let first = document.querySelector("#first");
+
+        first.className = "text-dark yellow"
+
+        // first.classList.remove("yellow")
+        // first.classList.add("yellow")
+        // first.classList.toggle("red")
+        // first.classList.contains("red")
+    </script>
+</body>
+
+</html>

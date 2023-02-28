@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter-7 pratice set</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav {
+        display: flex;
+        background: rgb(100, 206, 206);
+        width: 100%;
+        height: 59px;
+        align-items: center;
+    }
+
+    nav li {
+        list-style: none;
+        padding: 0 23px;
+    }
+</style>
+
+<body>
+
+    <!-- Create an element with 3 children now change the color of first and last element to given -->
+
+    <nav>
+        <li>home</li>
+        <li>about</li>
+        <li>blog</li>
+        <li>contact</li>
+    </nav>
+
+    <script>
+        document.getElementsByTagName("nav")[0].firstElementChild.style.color = "red"
+        document.getElementsByTagName("nav")[0].lastElementChild.style.color = "red"
+    </script>
+</body>
+
+</html>

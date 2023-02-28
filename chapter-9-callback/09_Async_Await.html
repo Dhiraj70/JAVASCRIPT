@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async/await</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        async function code() {
+            let biharweather = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve("25 deg")
+                }, 2000);
+            })
+
+            let delhiweather = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve("45 deg")
+                }, 5000);
+            })
+
+            //biharweather.then(alert)
+            //delhiweather.then(alert)
+
+            console.log("Fetching Bihar Weather Please Wait...")
+            let biharw = await biharweather;
+            console.log("Featching Bihat Weather: " + biharw)
+
+            console.log("Fetching Delhi Weather Please Wait...")
+            let delhiw = await delhiweather;
+            console.log("Featching Delhi Weather: " + delhiw)
+
+            return [biharw, delhiw]
+        }
+
+        let a = code();
+        a.then((value) => {
+            console.log(value)
+        })
+
+        const cherry = async () => {
+            console.log("Hey i am cherry and i am not waiting")
+        }
+
+//const main1 = async() => {
+//let a = await code();
+//let b = await cherry();
+//}
+
+// main1();
+
+    </script>
+
+</body>
+
+</html>

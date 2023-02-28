@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closures in javascript</title>
+</head>
+
+<body>
+    <h1>closures in javascript</h1>
+
+    <script>
+
+        // message = "Good morning";
+        function hello1() {
+            let message = "Good morning"; 
+            console.log("Good morning : " + message);
+
+            let c = function hello2() {
+                console.log("I am c " + message);
+            }
+            return c;
+        }
+
+        let c = hello1();
+        c();
+
+    </script>
+</body>
+
+</html>

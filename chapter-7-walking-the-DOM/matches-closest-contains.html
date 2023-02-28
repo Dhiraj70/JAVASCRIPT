@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="box" id="id1">This is an element 1 <span id="sp1">span 1</span></div>
+    <div class="box" id="id2">This is an element 2</div>
+
+
+    <!-- ----------javascript------------- -->
+
+    <script>
+        let id1 = document.getElementById("id1");
+        console.log(id1)
+        console.log(id1.matches(".box"))
+    </script>
+
+    <script>
+        console.log(sp1.closest("#sp1"))
+    </script>
+
+    <script>
+        let sp1 = document.getElementById("sp1");
+        console.log(id1.contains(sp1))
+    </script>
+
+</body>
+
+</html>

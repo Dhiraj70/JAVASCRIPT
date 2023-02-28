@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter-8 pratice set</title>
+</head>
+
+<body>
+    <!-- Create a website which is caplable of storing booksmarks of your
+         favriout website using href -->
+
+    <!-- Repeat Q-no-2 using event listiners-->
+
+    <h1>booksmarks</h1>
+    <hr>
+
+
+    <button id="google">Google</button>
+    <button id="fb">Facebook</button>
+    <button id="twitter">twitter</button>
+
+    <script>
+        document.getElementById('google').addEventListener("click", function () {
+            window.location = "https://www.google.com";
+            win.focus();
+        })
+
+        document.getElementById('fb').addEventListener("click", function() {
+            window.location = "https://www.fb.com";
+            win.focus();
+        })
+
+      //   document.querySelector('#twitter').addEventListener("click", function() {
+      //       window.location = "https://www.twitter.com";
+      //       win.focus();
+      //   })
+
+      let twitter = document.querySelector('#twitter');
+
+      twitter.addEventListener("click", () => {
+        window.location = "https://www.twitter.com"
+        win.focus()
+      })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript inheritance and extends keyword</title>
+</head>
+
+<body>
+    <h1>inheritance and extends keyword in Javascript</h1>
+
+    <script>
+
+        class animal {
+            constructor(name, color) {
+                this.name = name
+                this.color = color
+            }
+            run() {
+                console.log(`${this.name} is running!`);
+            }
+            shout() {
+                console.log(`${this.color}  is Shoutting`);
+            }
+        }
+
+
+        // useing extend keyword
+        class monkey extends animal {
+            eatBanana() {
+                console.log(`${this.name}  is eating Banana`)
+            }
+            hide() {
+                console.log(`${this.name} is hiding`)
+            }
+        }
+
+        let ani = new animal("bruna", "white")
+        let m = new monkey("chimko", "orange")
+
+        ani.shout();
+        m.eatBanana();
+        m.hide();
+     // ani.hide();   this will throw an error
+
+    </script>
+</body>
+
+</html>

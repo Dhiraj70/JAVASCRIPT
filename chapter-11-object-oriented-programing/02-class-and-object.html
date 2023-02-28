@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript class and object</title>
+</head>
+
+<body>
+
+    <h1>Class and object in javascript</h1>
+
+
+    <script>
+
+        class railwayForm {
+            submit() {
+                alert(this.name + " : Form submitted for train number : " + this.trainno);
+            }
+            cancel() {
+                alert(this.name + " : This form is cancelled for train number : " + this.trainno);
+            }
+            fill(givenname, trainno) {
+                this.name = givenname;
+                this.trainno = trainno
+            }
+        }
+
+        // Create a form of rahul
+        let rahulForm = new railwayForm()
+        // fill the form with rahul's details.
+        rahulForm.fill("rahul", 11123)
+
+        // Create a form of suraj
+        let surajForm = new railwayForm()
+        let surajForm2 = new railwayForm()
+        // fill the form's with suraj's details
+        surajForm.fill("rohan", 11124)
+        surajForm2.fill("rohan-2", 11124)
+
+        rahulForm.submit();
+        surajForm.submit();
+        surajForm2.submit();
+        surajForm.cancel();
+
+    </script>
+
+
+
+</body>
+
+</html>

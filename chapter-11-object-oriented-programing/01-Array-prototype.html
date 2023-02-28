@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJECT-ORIENTED-PROGRAMING-PROTOTYPE</title>
+</head>
+
+<body>
+    <h1>OBJECT-ORIENTED-PROGRAMING-PROTOTYPE</h1>
+
+    <script>
+
+        let a = {
+            name2: "Rahul",
+            language: "javascript",
+            run: () => {
+                alert("self run")
+            }
+        }
+
+        console.log(a)
+
+
+        let p = {
+            run: () => {
+                alert("run");
+            }
+        }
+
+        p.__proto__ = {
+            name: "Jakkie"
+        }
+
+
+        a.__proto__ = p;
+        a.run();
+        console.log(a.name)
+
+    </script>
+</body>
+
+</html>

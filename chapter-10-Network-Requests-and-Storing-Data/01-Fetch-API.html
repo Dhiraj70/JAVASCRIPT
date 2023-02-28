@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FETCH-API</title>
+</head>
+
+<body>
+    <h1>FETCH-API</h1>
+
+
+    <script>
+        // Weather API
+        let p = fetch("https://goweather.herokuapp.com/weather/bihar")
+        p.then((value1) => {
+
+            // console.log(value1.status)
+            // console.log(value1.ok)
+            // console.log(value1.headers)
+            
+            return value1.json()
+
+        }).then((value2) => {
+            console.log(value2)
+        })
+
+    </script>
+
+
+</body>
+
+</html>

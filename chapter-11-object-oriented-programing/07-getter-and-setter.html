@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript getter and setter</title>
+</head>
+
+<body>
+    <h1>getter and setter in javascript</h1>
+
+    <script>
+
+        class Animal {
+            constructor(name) {
+                this._name = name
+            }
+            fly() {
+                console.log("mai ud rha hu");
+            }
+            get name() {
+                return this._name
+            }
+            set name(newName) {
+                this._name = newName
+            }
+        }
+
+        class Rabbit extends Animal {
+            eating() {
+                console.log("Eating carrot")
+            }
+        }
+
+        // let a = new Animal("rahul")
+        let a = new Rabbit("rahul")
+        a.fly()
+        console.log(a.name)
+        a.name = "jack";
+        console.log(a.name)
+
+        let c = 56;
+
+        console.log(a instanceof Rabbit);
+        console.log(a instanceof Animal);
+
+        console.log(c instanceof Animal)
+
+
+    </script>
+</body>
+
+</html>

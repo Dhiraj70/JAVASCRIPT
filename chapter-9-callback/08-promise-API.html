@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROMISE - API</title>
+</head>
+
+<style>
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 70px;
+        font-family: sans-serif;
+    }
+
+    nav {
+        display: grid;
+        place-items: center;
+        background: #454242;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 70px;
+    }
+
+    nav h3 {
+        font-size: 25px;
+        color: #a59e9e;
+        text-transform: capitalize;
+        padding-bottom: 15px;
+    }
+
+    nav li {
+        list-style: none;
+        padding: 7px;
+        color: #a59e9e;
+        font-size: 19px;
+    }
+
+</style>
+
+<body>
+
+    <h1>PROMISE API IN JAVASCRIPT</h1>
+
+    <nav>
+        <h3>6 type of promise api</h3>
+        <ul>
+            <li>1. Promise.all</li>
+            <li>2. Promise.allSettled</li>
+            <li>3. Promise.race</li>
+            <li>4. Promise.any</li>
+            <li>5. Promise.resolve</li>
+            <li>6. Promise.reject</li>
+        </ul>
+    </nav>
+
+    <script>
+
+
+        let p1 = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve("value 1")
+            }, 3000);
+        })
+
+        let p2 = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve("value 2")
+                // reject(new Error("Error"));
+            }, 2000);
+        })
+
+        let p3 = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve("value 3")
+            }, 3000);
+        })
+
+        // let promise_all = Promise.all([p1, p2, p3]);
+
+        let promise_all = Promise.allSettled([p1, p2, p3])
+
+        //  let promise_all = Promise.race([p1, p2, p3]);
+
+        //  let promise_all = Promise.any([p1, p2, p3])
+
+        //  promise_all = Promise.resolve(6)
+
+        // promise_all = Promise.reject(new Error("hey this is new error"))
+
+        promise_all.then((value) => {
+            console.log(value)
+        })
+
+    </script>
+</body>
+
+</html>

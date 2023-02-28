@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructors in javascript</title>
+</head>
+
+<body>
+    <h1>constructors in javascript</h1>
+
+    <script>
+
+        class railwayForm {
+            constructor(givenname, trainno){
+                console.log("CONSTUCTOTR CALLED..." + givenname + " " + trainno);
+                this.name = givenname;
+                this.trainno = trainno;
+            }
+            submit() {
+                alert(this.name + " : Form submitted for train number : " + this.trainno);
+            }
+            cancel() {
+                alert(this.name + " : This form is cancelled for train number : " + this.trainno);
+            }
+        }
+
+        // Create and fill the form of rahul
+        let rahulForm = new railwayForm("rahul", 11123)
+
+        // Create & and fill the form of suraj
+        let surajForm = new railwayForm("rohan" , 11124)
+        let surajForm2 = new railwayForm("rohan", 11123)
+
+        rahulForm.submit();
+        surajForm.submit();
+        surajForm2.submit();
+        surajForm.cancel();
+
+    </script>
+</body>
+
+</html>
